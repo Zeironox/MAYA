@@ -1,9 +1,17 @@
-body {
-    font-family: Arial, sans-serif;
+/* Impostazioni globali */
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
 }
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+}
+
+/* Stile dell'intestazione */
 header {
     background-color: #333;
     color: white;
@@ -11,12 +19,16 @@ header {
     padding: 15px;
     font-size: 24px;
 }
+
+/* Contenitore per il layout a griglia */
 .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     padding: 20px;
 }
+
+/* Stile per le schede */
 .card {
     background: white;
     width: 300px;
@@ -27,13 +39,19 @@ header {
     text-align: center;
     transition: transform 0.3s;
 }
+
+/* Effetto hover sulle card */
 .card:hover {
     transform: scale(1.05);
 }
+
+/* Immagini dentro le card */
 .card img {
     width: 100%;
     border-radius: 10px;
 }
+
+/* Pulsante di interazione */
 button {
     margin-top: 10px;
     padding: 10px;
@@ -43,6 +61,8 @@ button {
     cursor: pointer;
     border-radius: 5px;
 }
+
+/* Effetto hover sul pulsante */
 button:hover {
     background-color: #555;
 }
